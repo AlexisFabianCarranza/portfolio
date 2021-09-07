@@ -1,0 +1,20 @@
+image: rambabusaravanan/firebase
+
+stages:
+  - deploy_tst
+
+cache:
+  paths:
+    - node_modules/
+  key: "$CI_BUILD_REPO"
+
+deploy_tst:
+  stage: deploy_tst
+  only:
+    - master
+  script:
+    - export CI=false
+    - yarn
+    - yarn run build
+    - firebase use $FIREBASE_PROJECT --token $FIREBASE_TOKEN
+    - firebase deploy --only hosting -m "Pipe $CI_PIPELINE_ID Build $CI_BUILD_ID" --token $FIREBASE_TOKEN
