@@ -4,7 +4,6 @@ import Text from "../components/Text";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import { Slide } from "react-awesome-reveal";
-import { ReactComponent as DeveloperSvg } from "../../assets/images/developer.svg";
 import HorizontalContainer from "../components/HorizontalContainer";
 
 const Contact = () => {
