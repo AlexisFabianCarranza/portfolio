@@ -1,4 +1,4 @@
-const { createMuiTheme } = require("@material-ui/core");
+const { createTheme } = require("@material-ui/core");
 
 const defaultTheme = {
   palette: {
@@ -19,7 +19,7 @@ const defaultTheme = {
     },
     text: {
       primary: "#FFFFFF",
-      secondary: "#0E0E0E",
+      secondary: "#AAAAAA",
     },
     warning: {
       main: "#FBC02D",
@@ -33,6 +33,6 @@ const defaultTheme = {
   },
 };
 
-const theme = createMuiTheme(defaultTheme);
+const theme = createTheme(defaultTheme);
 
 export default theme;
