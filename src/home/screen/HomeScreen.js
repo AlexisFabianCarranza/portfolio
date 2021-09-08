@@ -3,6 +3,7 @@ import React from "react";
 import About from "../sections/About";
 import Header from "../sections/Header";
 import Contact from "../sections/Contact";
+import Footer from "../sections/Footer";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -13,6 +14,10 @@ const useStyles = makeStyles((theme) => ({
   section: {
     marginTop: 20,
     marginBottom: 20,
+  },
+  footerSection: {
+    width: "100%",
+    backgroundColor: theme.palette.background.paper,
   },
 }));
 
@@ -30,13 +35,14 @@ const HomeScreen = () => {
               <About />
             </Grid>
             <Grid item>
-              <About />
-            </Grid>
-            <Grid item>
-              <About />
-            </Grid>
-            <Grid item>
               <Contact />
+            </Grid>
+          </Grid>
+        </Grid>
+        <Grid item xs={12} className={classes.footerSection}>
+          <Grid container direction={"column"} alignItems={"center"}>
+            <Grid item lg={8} md={10} sm={11} xs={11} container>
+              <Footer />
             </Grid>
           </Grid>
         </Grid>

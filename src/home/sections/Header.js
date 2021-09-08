@@ -6,6 +6,7 @@ import {
   Typography,
 } from "@material-ui/core";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -21,6 +22,7 @@ const useStyles = makeStyles((theme) => ({
 
 const Header = () => {
   const classes = useStyles();
+  const { t } = useTranslation();
   return (
     <div className={classes.container}>
       <Grid container>
@@ -34,22 +36,22 @@ const Header = () => {
             <Grid container direction={"row-reverse"} spacing={4}>
               <Grid item>
                 <Button color={"primary"} variant={"contained"} href={"#about"}>
-                  Contact
+                  {t("header.menu.contact")}
                 </Button>
               </Grid>
               <Grid item>
                 <Button color={"secondary"} href={"#about"}>
-                  Skills
+                  {t("header.menu.skills")}
                 </Button>
               </Grid>
               <Grid item>
                 <Button color={"secondary"} href={"#about"}>
-                  Experiences
+                  {t("header.menu.experiences")}
                 </Button>
               </Grid>
               <Grid item>
                 <Button color={"secondary"} href={"#about"}>
-                  About
+                  {t("header.menu.about")}
                 </Button>
               </Grid>
             </Grid>
