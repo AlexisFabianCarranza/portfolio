@@ -1,8 +1,23 @@
 {
+  "header.menu.title": "Mi portafolio",
   "header.menu.about": "Sobre mi",
   "header.menu.experiences": "Experiencias",
   "header.menu.skills": "Habilidades",
   "header.menu.contact": "Contactar",
+
+  "about.title": "Hola, me llamo Alexis. \n Soy Ingeniero en Sistemas de Informacion y amo la tecnología",
+  "about.description": "Lorem Ipsum is simply dummy text of the printing and typesetting",
+  "about.button.contact": "Contactame",
+
+  "contact.title": "Contactame",
+  "contact.description": "No dudes en contactarme si tienes alguna duda o si quieres hablar de algo conmigo. ",
+  "contact.form.name": "Nombre",
+  "contact.form.name.description": "Tu nombre",
+  "contact.form.email": "Email",
+  "contact.form.email.description": "Tu email",
+  "contact.form.message": "Mensaje",
+  "contact.form.message.description": "Escribe tu mensaje",
+  "contact.form.submit": "Enviar",
 
   "footer.language": "Lenguaje"
 }

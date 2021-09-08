@@ -10,8 +10,8 @@ import Button from "@material-ui/core/Button";
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    marginTop: 20,
-    marginBottom: 20,
+    marginTop: 50,
+    marginBottom: 50,
   },
 }));
 
@@ -33,10 +33,10 @@ const Footer = () => {
         </Button>
       </Grid>
       <Grid item lg={4} md={4} sm={12} xs={12}>
-        <h1>Hola</h1>
+        <Text>{t("footer.language")}</Text>
       </Grid>
       <Grid item lg={4} md={4} sm={12} xs={12}>
-        <h1>Hola</h1>
+        <Text>{t("footer.language")}</Text>
       </Grid>
     </Grid>
   );

@@ -5,8 +5,10 @@ import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import { Slide } from "react-awesome-reveal";
 import HorizontalContainer from "../components/HorizontalContainer";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
   return (
     <HorizontalContainer
       animation={"none"}
@@ -16,18 +18,24 @@ const Contact = () => {
             <Grid item>
               <TextField
                 variant="filled"
-                label="Name"
+                label={t("contact.form.name")}
                 fullWidth
-                placeholder={"Your name"}
+                placeholder={t("contact.form.name.description")}
               />
-            </Grid>
-            <Grid item>
-              <TextField variant="filled" label="Email" fullWidth />
             </Grid>
             <Grid item>
               <TextField
                 variant="filled"
-                label="Message"
+                label={t("contact.form.email")}
+                fullWidth
+                placeholder={t("contact.form.email.description")}
+              />
+            </Grid>
+            <Grid item>
+              <TextField
+                variant="filled"
+                label={t("contact.form.message")}
+                placeholder={t("contact.form.message.description")}
                 fullWidth
                 multiline
                 minRows={4}
@@ -35,7 +43,7 @@ const Contact = () => {
             </Grid>
             <Grid item>
               <Button variant={"contained"} type={"submit"} color={"primary"}>
-                Submit
+                {t("contact.form.submit")}
               </Button>
             </Grid>
           </Grid>
@@ -45,21 +53,10 @@ const Contact = () => {
         <Slide direction="left">
           <Grid container spacing={3} direction={"column"}>
             <Grid item>
-              <Text type="title">Contact Me</Text>
+              <Text type="title">{t("contact.title")}</Text>
             </Grid>
             <Grid item>
-              <Text>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum.
-              </Text>
+              <Text>{t("contact.description")}</Text>
             </Grid>
           </Grid>
         </Slide>

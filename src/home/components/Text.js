@@ -3,12 +3,17 @@ import React from "react";
 
 const Text = ({ children, type }) => {
   const theme = useTheme();
-  let props = {};
+  let props = {
+    style: {
+      whiteSpace: "pre-line",
+    },
+  };
   switch (type) {
     case "title":
       props = {
         variant: "h5",
         style: {
+          ...props.style,
           color: theme.palette.text.primary,
           fontWeight: "bold",
         },
@@ -17,6 +22,7 @@ const Text = ({ children, type }) => {
     default:
       props = {
         style: {
+          ...props.style,
           color: theme.palette.text.secondary,
         },
       };
