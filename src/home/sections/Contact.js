@@ -11,6 +11,7 @@ const Contact = () => {
   const { t } = useTranslation();
   return (
     <HorizontalContainer
+      id={"contact"}
       animation={"none"}
       RightComponent={() => (
         <Slide direction="right">

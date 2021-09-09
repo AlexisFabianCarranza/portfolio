@@ -4,6 +4,9 @@ import About from "../sections/About";
 import Header from "../sections/Header";
 import Contact from "../sections/Contact";
 import Footer from "../sections/Footer";
+import Constants from "../utils/constants";
+import Experiences from "../sections/Experiences";
+import Skills from "../sections/Skills";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -11,9 +14,11 @@ const useStyles = makeStyles((theme) => ({
     height: "100vh",
     overflow: "auto",
   },
+  content: {
+    width: "100%",
+  },
   section: {
-    marginTop: 20,
-    marginBottom: 20,
+    marginBottom: 100,
   },
   footerSection: {
     width: "100%",
@@ -26,18 +31,27 @@ const HomeScreen = () => {
   return (
     <div className={classes.container}>
       <Grid container direction={"column"} alignItems={"center"}>
-        <Grid item lg={8} md={10} sm={11} xs={11}>
-          <Grid container direction="column" spacing={10}>
-            <Grid item className={classes.section}>
+        <Grid item lg={8} md={10} sm={11} xs={11} className={classes.content}>
+          <div>
+            <div className={classes.section}>
               <Header />
-            </Grid>
-            <Grid item>
+            </div>
+            <div className={classes.section} id={Constants.Sections.about}>
               <About />
-            </Grid>
-            <Grid item>
+            </div>
+            <div
+              className={classes.section}
+              id={Constants.Sections.experiences}
+            >
+              <Experiences />
+            </div>
+            <div className={classes.section} id={Constants.Sections.skills}>
+              <Skills />
+            </div>
+            <div className={classes.section} id={Constants.Sections.contact}>
               <Contact />
-            </Grid>
-          </Grid>
+            </div>
+          </div>
         </Grid>
         <Grid item xs={12} className={classes.footerSection}>
           <Grid container direction={"column"} alignItems={"center"}>

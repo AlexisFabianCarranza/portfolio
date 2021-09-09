@@ -5,12 +5,32 @@
   "header.menu.skills": "Skills",
   "header.menu.contact": "Contact",
 
-  "about.title": "Hi, I´m Alexis. \n I am Software Engineer and I love technology",
-  "about.description": "Lorem Ipsum is simply dummy text of the printing and typesetting",
+  "about.title": "Hi, I´m Alexis. \n I am Information Systems Engineer and I love technology",
+  "about.description": "I am {{age}} years old and I was born in Argentina. \n I studied Information Systems Engineering at Technological University of Cordoba, Argentina since 2015 to 2021. \n I like challenges and to learn new things constantly.",
+
   "about.button.contact": "Contact with me",
 
+  "experiences.title":  "Experiences",
+  "experiences.description":  "Let me show you my work experiences",
+  "experiences.mp.title":  "Mercado Pago",
+  "experiences.mp.description":  "Mercado Pago is the Fintech number one on America Latina, and belongs to Mercado Libre. This platform let you charge by Internet through diferents options: email, social media, web site or smart phones.",
+  "experiences.mp.job.position":  "Software Engineer - 2020-2021",
+  "experiences.mp.job.description":  "I am working like Software Engineer",
+  "experiences.personal.title":  "Telecom Personal",
+  "experiences.personal.description":  "Personal is a telecommunication company who operate in all Argentina through Telecom",
+  "experiences.personal.job.position":  "Full stack Developer and Researcher - 2020",
+  "experiences.personal.job.description":  "I worked ...",
+  "experiences.claro.title":  "Claro ",
+  "experiences.claro.description":  "Claro is a set of telecommunication services around Latinoamerica, who is property of America Movíl\n",
+  "experiences.claro.job.position":  "Developer Analyst - 2019",
+  "experiences.claro.job.description":  "I worked ...",
+
+  "skills.title": "Skills",
+  "skills.description": "Let me show you some technologies that I know about",
+
+
   "contact.title": "Contact me",
-  "contact.description": "You can talk to me about anything. Thanks for review my resume",
+  "contact.description": "You can talk to me about anything. Thanks for view my resume",
   "contact.form.name": "Name",
   "contact.form.name.description": "Your name",
   "contact.form.email": "Email",
@@ -19,5 +39,7 @@
   "contact.form.message.description": "Write your message",
   "contact.form.submit": "Submit",
 
-  "footer.language": "Language"
+  "footer.language": "Language",
+  "footer.linkedin": "Linkedin",
+  "footer.github": "Github"
 }

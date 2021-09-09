@@ -9,8 +9,26 @@
   "about.description": "Lorem Ipsum is simply dummy text of the printing and typesetting",
   "about.button.contact": "Contactame",
 
+  "experiences.title":  "Experiencias",
+  "experiences.description":  "Dejame mostrarte algunas experiencias laborales",
+  "experiences.mp.title": "Mercado Pago",
+  "experiences.mp.description":  "Mercado Pago es la Fintech número uno en América Latina, y pertenece a la empresa Mercado Libre. La herramienta permite cobrar por Internet a través de diferentes opciones: correo electrónico, redes sociales, sitio web, una aplicación de celular o un dispositivo conectado a cualquier teléfono o tablet",
+  "experiences.mp.job.position":  "Ingeniero de Software - 2020-2021",
+  "experiences.mp.job.description":  "Estoy trabajando como ingeniero de software",
+  "experiences.personal.title":  "Telecom Personal - 2020",
+  "experiences.personal.description":  "Personal es una compañía de telecomunicaciones que opera en toda la Argentina a través de Telecom.",
+  "experiences.personal.job.position":  "Full stack Developer and Researcher",
+  "experiences.personal.job.description":  "I worked ...",
+  "experiences.claro.title":  "Claro - 2019",
+  "experiences.claro.description":  "Claro is ...",
+  "experiences.claro.job.position":  "Developer Analyst",
+  "experiences.claro.job.description":  "I worked ...",
+
+  "skills.title": "Tecnologías",
+  "skills.description": "Dejame mostrarte alguna de las tecnologías con la que trabajo actualmente",
+
   "contact.title": "Contactame",
-  "contact.description": "No dudes en contactarme si tienes alguna duda o si quieres hablar de algo conmigo. ",
+  "contact.description": "No dudes en contactarme si tienes alguna duda o si quieres hablar de algo. Gracias por visitar mi resumen ",
   "contact.form.name": "Nombre",
   "contact.form.name.description": "Tu nombre",
   "contact.form.email": "Email",
@@ -19,5 +37,7 @@
   "contact.form.message.description": "Escribe tu mensaje",
   "contact.form.submit": "Enviar",
 
-  "footer.language": "Lenguaje"
+  "footer.language": "Lenguaje",
+  "footer.linkedin": "Linkedin",
+  "footer.github": "Github"
 }
