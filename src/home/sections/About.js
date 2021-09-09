@@ -8,9 +8,6 @@ import scrollToSection from "../utils/scrollToSection";
 import Constants from "../utils/constants";
 import getAge from "../utils/getAge";
 
-const bornYear = 1996;
-const myAge = new Date().getFullYear() - bornYear;
-
 const About = () => {
   const { t } = useTranslation();
   return (
