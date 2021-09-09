@@ -53,18 +53,6 @@ const Experiences = () => {
       <HorizontalContainer
         LeftComponent={() => (
           <Grid container spacing={3} direction={"column"}>
-            <Grid item>
-              <Text type={"subtitle"}>
-                {t("experiences.personal.job.position")}
-              </Text>
-            </Grid>
-            <Grid item>
-              <Text>{t("experiences.personal.job.description")}</Text>
-            </Grid>
-          </Grid>
-        )}
-        RightComponent={() => (
-          <Grid container spacing={3} direction={"column"}>
             <img
               src={PersonalImg}
               width={widthLogo}
@@ -76,6 +64,18 @@ const Experiences = () => {
             </Grid>
             <Grid item>
               <Text>{t("experiences.personal.description")}</Text>
+            </Grid>
+          </Grid>
+        )}
+        RightComponent={() => (
+          <Grid container spacing={3} direction={"column"}>
+            <Grid item>
+              <Text type={"subtitle"}>
+                {t("experiences.personal.job.position")}
+              </Text>
+            </Grid>
+            <Grid item>
+              <Text>{t("experiences.personal.job.description")}</Text>
             </Grid>
           </Grid>
         )}

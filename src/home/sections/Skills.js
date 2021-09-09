@@ -43,42 +43,30 @@ const Skills = () => {
         </Slide>
       </Grid>
       <Grid item>
-        <Grid container direction={"row"} justifyContent={"center"}>
-          <Grid item xs={3}>
-            <Grid container justifyContent={"center"}>
-              <Grid item>
-                <Text type="subtitle" className={classes.subtitle}>
-                  Frontend
-                </Text>
-                {frontTechnologies.map((tech) => (
-                  <Skill name={tech} />
-                ))}
-              </Grid>
-            </Grid>
+        <Grid container direction={"row"} justifyContent={"center"} spacing={5}>
+          <Grid item lg={3} md={3} sm={11} xs={11}>
+            <Text type="subtitle" className={classes.subtitle}>
+              Frontend
+            </Text>
+            {frontTechnologies.map((tech) => (
+              <Skill name={tech} key={tech} />
+            ))}
           </Grid>
-          <Grid item xs={3}>
-            <Grid container justifyContent={"center"}>
-              <Grid item>
-                <Text type="subtitle" className={classes.subtitle}>
-                  Backend
-                </Text>
-                {backTechnologies.map((tech) => (
-                  <Skill name={tech} />
-                ))}
-              </Grid>
-            </Grid>
+          <Grid item lg={3} md={3} sm={11} xs={11}>
+            <Text type="subtitle" className={classes.subtitle}>
+              Backend
+            </Text>
+            {backTechnologies.map((tech) => (
+              <Skill name={tech} key={tech} />
+            ))}
           </Grid>
-          <Grid item xs={3}>
-            <Grid container justifyContent={"center"}>
-              <Grid item>
-                <Text type="subtitle" className={classes.subtitle}>
-                  Other technologies
-                </Text>
-                {otherTechnologies.map((tech) => (
-                  <Skill name={tech} />
-                ))}
-              </Grid>
-            </Grid>
+          <Grid item lg={3} md={3} sm={11} xs={11}>
+            <Text type="subtitle" className={classes.subtitle}>
+              Other technologies
+            </Text>
+            {otherTechnologies.map((tech) => (
+              <Skill name={tech} />
+            ))}
           </Grid>
         </Grid>
       </Grid>
