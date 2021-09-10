@@ -25,6 +25,18 @@ const githubUrl = "https://github.com/AlexisFabianCarranza?tab=repositories";
 const linkedinUrl =
   "https://www.linkedin.com/in/alexis-fabian-carranza-673657178/";
 
+const FooterInfoContainer = ({ subtitle, children }) => {
+  const classes = useStyles();
+  return (
+    <Grid container direction={"column"} alignItems={"center"}>
+      <Grid item>
+        <Text className={classes.subtitle}>{subtitle}</Text>
+      </Grid>
+      <Grid item>{children}</Grid>
+    </Grid>
+  );
+};
+
 const Footer = () => {
   const classes = useStyles();
   const { t, i18n } = useTranslation();
@@ -37,45 +49,31 @@ const Footer = () => {
       direction={"row"}
       justifyContent={"center"}
       className={classes.container}
+      spacing={5}
     >
       <Grid item xs={4}>
-        <Grid container direction={"column"} alignItems={"center"}>
-          <Grid item>
-            <Text className={classes.subtitle}>{t("footer.language")}</Text>
-          </Grid>
-          <Grid item>
-            <Button onClick={() => handleChangeLanguage("en")}>
-              <UnitedStatesSvg height={iconSize} width={iconSize} />
-            </Button>
-            <Button onClick={() => handleChangeLanguage("es")}>
-              <SpainSvg height={iconSize} width={iconSize} />
-            </Button>
-          </Grid>
-        </Grid>
+        <FooterInfoContainer subtitle={t("footer.language")}>
+          <Button onClick={() => handleChangeLanguage("en")}>
+            <UnitedStatesSvg height={iconSize} width={iconSize} />
+          </Button>
+          <Button onClick={() => handleChangeLanguage("es")}>
+            <SpainSvg height={iconSize} width={iconSize} />
+          </Button>
+        </FooterInfoContainer>
       </Grid>
       <Grid item xs={4}>
-        <Grid container direction={"column"} alignItems={"center"}>
-          <Grid item>
-            <Text className={classes.subtitle}>{t("footer.linkedin")}</Text>
-          </Grid>
-          <Grid item>
-            <Button onClick={() => window.open(linkedinUrl, "_blank")}>
-              <LinkedinSvg height={iconSize} width={iconSize} />
-            </Button>
-          </Grid>
-        </Grid>
+        <FooterInfoContainer subtitle={t("footer.linkedin")}>
+          <Button onClick={() => window.open(linkedinUrl, "_blank")}>
+            <LinkedinSvg height={iconSize} width={iconSize} />
+          </Button>
+        </FooterInfoContainer>
       </Grid>
       <Grid item xs={4}>
-        <Grid container direction={"column"} alignItems={"center"}>
-          <Grid item>
-            <Text className={classes.subtitle}>{t("footer.github")}</Text>
-          </Grid>
-          <Grid item>
-            <Button onClick={() => window.open(githubUrl, "_blank")}>
-              <GithubSvg height={iconSize} width={iconSize} />
-            </Button>
-          </Grid>
-        </Grid>
+        <FooterInfoContainer subtitle={t("footer.github")}>
+          <Button onClick={() => window.open(githubUrl, "_blank")}>
+            <GithubSvg height={iconSize} width={iconSize} />
+          </Button>
+        </FooterInfoContainer>
       </Grid>
     </Grid>
   );

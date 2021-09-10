@@ -5,8 +5,8 @@
   "header.menu.skills": "Habilidades",
   "header.menu.contact": "Contactar",
 
-  "about.title": "Hola, me llamo Alexis. \n Soy Ingeniero en Sistemas de Informacion y amo la tecnología",
-  "about.description": "Lorem Ipsum is simply dummy text of the printing and typesetting",
+  "about.title": "Hola, me llamo Alexis. \n Soy Ingeniero en Sistemas de Información y amo la tecnología",
+  "about.description": "Tengo 24 años de edad y nací en Argentina. \n Estudié Ingeniería en Sistemas de Información en la Universidad Tecnológica Nacional en Córdoba, Argentina desde 2015 hasta 2021. Me gustan los desafíos y aprender nuevas cosas constantemente.",
   "about.button.contact": "Contactame",
 
   "experiences.title":  "Experiencias",
@@ -14,7 +14,11 @@
   "experiences.mp.title": "Mercado Pago",
   "experiences.mp.description":  "Mercado Pago es la Fintech número uno en América Latina, y pertenece a la empresa Mercado Libre. La herramienta permite cobrar por Internet a través de diferentes opciones: correo electrónico, redes sociales, sitio web, una aplicación de celular o un dispositivo conectado a cualquier teléfono o tablet",
   "experiences.mp.job.position":  "Ingeniero de Software - 2020-2021",
-  "experiences.mp.job.description":  "Estoy trabajando como ingeniero de software",
+  "experiences.mp.job.description":  "Actualmente estoy trabajando como Software Engineer en un proyecto de llamado \"Tarjeta de credito\". \n  Mi role en el equipo es \"Backend Software Engineer\" y estoy encargado de planificar, dirigir, ejecutar y controlar  and I am in charge of plan, direct, execute and control the analysis, design, development, implementation and testing of software components\n Also, I work in Frontend making a customer service application",
+  "experiences.freelance.title":  "Freelance",
+  "experiences.freelance.description":  "Freelancer, or freelance worker, are terms commonly used for a person who is self-employed and not necessarily committed to a particular employer long-term.",
+  "experiences.freelance.job.position":  "Full stack developer - 2020-2021",
+  "experiences.freelance.job.description":  "I was working in 2020 in the develop of a omni-channel platform mobile.",
   "experiences.personal.title":  "Telecom Personal - 2020",
   "experiences.personal.description":  "Personal es una compañía de telecomunicaciones que opera en toda la Argentina a través de Telecom.",
   "experiences.personal.job.position":  "Full stack Developer and Researcher",

@@ -7,7 +7,6 @@
 
   "about.title": "Hi, I´m Alexis. \n I am Information Systems Engineer and I love technology",
   "about.description": "I am {{age}} years old and I was born in Argentina. \n I studied Information Systems Engineering at Technological University of Cordoba, Argentina since 2015 to 2021. \n I like challenges and to learn new things constantly.",
-
   "about.button.contact": "Contact with me",
 
   "experiences.title":  "Experiences",
@@ -16,6 +15,10 @@
   "experiences.mp.description":  "Mercado Pago is the Fintech number one on America Latina, and belongs to Mercado Libre. This platform let you charge by Internet through diferents options: email, social media, web site or smart phones.",
   "experiences.mp.job.position":  "Software Engineer - 2020-2021",
   "experiences.mp.job.description":  "I am working like Software Engineer in the project called \"Credit Card\".\n My role in the team is \"Backend Software Engineer\" and I am in charge of plan, direct, execute and control the analysis, design, development, implementation and testing of software components\n Also, I work in Frontend making a customer service application",
+  "experiences.freelance.title":  "Freelance",
+  "experiences.freelance.description":  "Freelancer, or freelance worker, are terms commonly used for a person who is self-employed and not necessarily committed to a particular employer long-term.",
+  "experiences.freelance.job.position":  "Full stack developer - 2020-2021",
+  "experiences.freelance.job.description":  "I was working in 2020 in the develop of a omni-channel platform mobile.",
   "experiences.personal.title":  "Telecom Personal",
   "experiences.personal.description":  "Personal is a telecommunication company who operate in all Argentina through Telecom",
   "experiences.personal.job.position":  "Full stack Developer and Researcher - 2020",
@@ -27,7 +30,6 @@
 
   "skills.title": "Skills",
   "skills.description": "Let me show you some technologies that I know about",
-
 
   "contact.title": "Contact me",
   "contact.description": "You can talk to me about anything. Thanks for view my resume",
