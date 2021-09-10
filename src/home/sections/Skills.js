@@ -33,7 +33,7 @@ const Skills = () => {
   const { t } = useTranslation();
   const classes = useStyles();
   return (
-    <Grid container direction="column">
+    <Grid container direction="column" spacing={5}>
       <Grid item>
         <Slide direction={"up"}>
           <HeaderSection
