@@ -1,7 +1,7 @@
 import { Typography, useTheme } from "@material-ui/core";
 import React from "react";
 
-const Text = ({ children, type, className }) => {
+const Text = ({ children, type, className, color }) => {
   const theme = useTheme();
   let props = {
     style: {
@@ -13,9 +13,9 @@ const Text = ({ children, type, className }) => {
       props = {
         variant: "h4",
         style: {
-          ...props.style,
-          color: theme.palette.text.primary,
+          color: color ? color : theme.palette.text.primary,
           fontWeight: "bold",
+          ...props.style,
         },
       };
       break;
@@ -23,22 +23,22 @@ const Text = ({ children, type, className }) => {
       props = {
         variant: "h6",
         style: {
+          color: color ? color : theme.palette.text.primary,
           ...props.style,
-          color: theme.palette.text.primary,
         },
       };
       break;
     default:
       props = {
         style: {
+          color: color ? color : theme.palette.text.secondary,
           ...props.style,
-          color: theme.palette.text.secondary,
         },
       };
   }
 
   return (
-    <Typography className={className} {...props}>
+    <Typography {...props} className={className}>
       {children}
     </Typography>
   );
